@@ -39,13 +39,18 @@ Encoding is not specified, but in the absence of a clearly designated encoding, 
 
 Versioning of the CLEF format is additive only, with no version identifier; implementations should treat any unrecognised reified properties as if they are user data.
 
-## Tools
+## Tools and resources
 
 Various tools are available for working with the CLEF format.
 
  * **[_Analogy.LogViewer.Serilog_](https://github.com/Analogy-LogViewer/Analogy.LogViewer.Serilog)** - CLEF parser for [Analogy Log Viewer](https://github.com/Analogy-LogViewer/Analogy.LogViewer)
  * **[`clef-tool`](https://github.com/datalust/clef-tool)** - a CLI application for processing CLEF files
  * **[Compact Log Format Viewer](https://github.com/warrenbuckley/Compact-Log-Format-Viewer)** - a cross-platform viewer for CLEF files
- * **[`seqcli`](https://github.com/datalust/seqcli)** - pretty-`print` CLEF files at the command-line, or `ingest` CLEF files into [Seq](https://datalust.co/seq) for search, and analysis
+ * **[Seq](https://datalust.co/seq)** - import, search, analyze, and export application logs in the CLEF format
+ * **[`seqcli`](https://github.com/datalust/seqcli)** - pretty-`print` CLEF files at the command-line
+ * **[_Serilog.Formatting.Compact_](https://github.com/serilog/serilog-formatting-compact)** - write Serilog events in CLEF format, to various sinks including files or the terminal
  * **[_Serilog.Formatting.Compact.Reader_](https://github.com/serilog/serilog-formatting-compact-reader)** - convert CLEF documents back into Serilog `LogEvent`s
  
+## Acknowledgements
+
+CLEF was [originally developed](https://nblumhardt.com/2016/07/serilog-2-0-json-improvements/#compact-json-support) as part of [the Serilog project](https://serilog.net).
