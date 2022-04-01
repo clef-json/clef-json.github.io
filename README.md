@@ -46,6 +46,7 @@ Various tools are available for working with the CLEF format.
  * **[_Analogy.LogViewer.Serilog_](https://github.com/Analogy-LogViewer/Analogy.LogViewer.Serilog)** - CLEF parser for [Analogy Log Viewer](https://github.com/Analogy-LogViewer/Analogy.LogViewer)
  * **[`clef-tool`](https://github.com/datalust/clef-tool)** - a CLI application for processing CLEF files
  * **[Compact Log Format Viewer](https://github.com/warrenbuckley/Compact-Log-Format-Viewer)** - a cross-platform viewer for CLEF files
+ * **[Klogging](https://github.com/klogging/klogging)** - supports rendering structured logs from Kotlin in the CLEF format
  * **[Seq](https://datalust.co/seq)** - import, search, analyze, and export application logs in the CLEF format
  * **[`seqcli`](https://github.com/datalust/seqcli)** - pretty-`print` CLEF files at the command-line
  * **[_Serilog.Formatting.Compact_](https://github.com/serilog/serilog-formatting-compact)** - write Serilog events in CLEF format, to various sinks including files or the terminal
