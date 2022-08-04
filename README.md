@@ -13,7 +13,7 @@ The format defines a handful of reified properties that have special meaning:
 | `@mt` | Message template | Alternative to Message; specifies a [message template](https://messagetemplates.org) over the event's properties that provides for rendering into a textual description of the event | |
 | `@l` | Level | An implementation-specific level or severity identifier (string or number) | Absence implies "informational"  |
 | `@x` | Exception | A language-dependent error representation potentially including backtrace | |
-| `@i` | Event id | An implementation specific event id (string or number) | |
+| `@i` | Event id | An implementation specific event id, identifying the _type_ of the event (string or number) | |
 | `@r` | Renderings | If `@mt` includes tokens with programming-language-specific formatting, an array of pre-rendered values for each such token | May be omitted; if present, the count of renderings must match the count of formatted tokens exactly |
 
 The `@` sigil may be escaped at the start of a user property name by doubling, e.g. `@@name` denotes a property called `@name`.
