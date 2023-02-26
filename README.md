@@ -33,11 +33,19 @@ When multiple events are written to a text file or stream:
  * Every line must contain a valid event adhering to the CLEF schema, and
  * Every line must end with `\n`, `\r\n`, or the end of the file/stream.
 
+## Encoding
+
 Encoding is not specified, but in the absence of a clearly designated encoding, UTF-8 should be assumed.
 
 ## Versioning
 
 Versioning of the CLEF format is additive only, with no version identifier; implementations should treat any unrecognised reified properties as if they are user data.
+
+For example, if an implementation encounters a top-level document property `@y`, which is unknown to the standard, this should be regarded as a regular property of the event with the name `@y`, and **not** (for example) stripped of its prefix and given the bare name `y`.
+
+## MIME type
+
+By convention, CLEF documents use the unregistered `application/vnd.serilog.clef` MIME type.
 
 ## Tools and resources
 
